@@ -1,0 +1,20 @@
+.contenedor-carro-de-compras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 25px;
+    color: #fff;
+    background-color: dimgrey;
+    border-radius: 12px;
+    padding: 0 5px;
+}
+
+.contenedor-carro-de-compras:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contenedor-carro-de-compras > * {
+    margin: 0 3px;
+}

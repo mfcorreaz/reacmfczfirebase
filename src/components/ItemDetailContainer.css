@@ -1,0 +1,35 @@
+.item-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    height: 500px;
+    max-width: 90rem;
+    margin: 10px 5px;
+    background-color: lightgray;
+}
+
+.item-detail > * {
+    margin: 0 auto;
+}
+
+.item-header {
+    display: flex;
+    width: 90%;
+    padding: 12px 10px 10px 10px;
+    justify-content: space-between;
+}
+
+.item-detail-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem 0;
+    width: 70%;
+}
+
+.item-detail-img-top{
+    margin: 20px;
+    background-color: gray;
+    border-radius: 12px;
+    width: 200px;
+}
+

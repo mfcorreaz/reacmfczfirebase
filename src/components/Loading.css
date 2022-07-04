@@ -1,0 +1,10 @@
+.loading-container {
+    position: relative;
+    display: flex;
+    height: 655px;
+    width: 100vw;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}

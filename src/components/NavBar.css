@@ -1,0 +1,27 @@
+.Nave{
+    background-color: black;
+    
+}
+
+.navbar-brand {
+    color:rgb(242, 243, 245);
+}
+
+.navbar-brand img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+.navbar-nav .dropdown-menu {
+    left: 300px;
+    top: 58px;
+}
+
+.navbar-nav .dropdown-menu > * {
+    margin: 0 10px;
+    color: black;
+}

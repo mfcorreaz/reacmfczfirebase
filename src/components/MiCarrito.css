@@ -1,0 +1,25 @@
+.section-mi-carrito {
+    background-color: #eee;
+}
+
+.imágen-nft {
+    margin-right: 10px;
+    width: 65px;
+}
+
+.contenedor-cantidad-este-producto {
+    width: 50px;
+}
+
+.contenedor-precio-este-producto {
+    width: 80px;
+}
+
+.icono-volver {
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.bg-negro {
+    background-color: black;
+}

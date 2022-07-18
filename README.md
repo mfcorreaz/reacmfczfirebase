@@ -10,7 +10,7 @@ LINK:
 
       GIF. https://drive.google.com/file/d/1Xgd5E3t8iX9RwjzjY2jbYNNx71V-FQAW/view?usp=sharing
       
-      GITHUB https://github.com/mfcorreaz/reacmfczfirebase.git
+      GITHUB https://github.com/mfcorreaz/reacmfczfirebase/tree/final
       
       
 No pude hacer el deploy por que me tiro un error a la hora de instalar el firebase por consola

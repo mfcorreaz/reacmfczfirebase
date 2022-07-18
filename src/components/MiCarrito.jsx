@@ -17,9 +17,10 @@ export default function MiCarrito({}) {
             <div className="col">
               <div className="card">
                 <div className="card-body p-4">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h5 className="mb-3">
+                  <div className="row contenedorCarrito">
+                    <div className="col-lg-7 mb-3 prueba">
+                      <h5 className="mb-3 ">
+                        
                       {cart.length == 0 && "El carrito está vacío"}
                         <Link to={"/"} className="text-body d-flex justify-content-start flex-row align-items-center aling-content-center">
                           <svg className="bi bi-arrow-left-circle icono-volver" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

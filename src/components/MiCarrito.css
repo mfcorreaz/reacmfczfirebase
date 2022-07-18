@@ -23,3 +23,11 @@
 .bg-negro {
     background-color: black;
 }
+
+.contenedorCarrito {
+    padding: 23px 0 22px 0;
+}
+
+.prueba {
+    height: 278px;
+}

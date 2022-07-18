@@ -1,40 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .resaltar-con-rojo, .cantidad-disponible {
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .resaltar-con-rojo {
-    background-color: #ff5e5e;
-    border: 3px #fb3838 solid;
+    background-color: #d1fb38;
+    border: 2px orangered solid;
     border-radius: 8px;
     font-weight: bold;
+    padding: 0 5px;
+    margin-bottom: 5px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+   
 }
 
 form > div {
     padding: 10px;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .contenedor-parte-principal {
-    background-color: #efeae9;
+    background-color: orange;
+    text-align: center;
+    border: 2px solid orangered;
+    border-radius: 5px;
+   
 }
 
 .contenedor-control-inventario {
     display: flex;
     justify-content: space-between;
-    margin: 5px;
+   
 }
 
 .contenedor-selector-numerico {
     position: relative;
     display: flex;
     align-items: center;
+    
 }
 
 .contenedor-selector-numerico input {
@@ -46,6 +58,7 @@ form > div {
     width: 20px;
     position: absolute;
     cursor: pointer;
+
 }
 
 .boton-restar {
@@ -63,16 +76,21 @@ form > div {
 
 .agregar-al-carrito {
     background-color: #fdeae6;
-    border: 3px #fb3838 solid;
-    color: #a31c1c;
+    border: 2px solid orangered;
+    color: orangered;
     font-weight: bold;
     margin: 0 auto;
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 4px 4px 2px 0px rgb(0 0 0 / 75%);
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px 0px rgba(223, 247, 102, 0.369);
 }
 
 .agregar-al-carrito:active {
-    background-color: #f8f9fa;
-    box-shadow: 0px 0px 11px 1px rgb(0 0 0 / 75%);
+   
+    box-shadow: 0px 0px 11px 1px orangered;
+}
+
+.formCount {
+    background-color: white;
+    width: 100%;
 }

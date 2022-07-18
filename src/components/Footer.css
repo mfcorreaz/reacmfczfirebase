@@ -1,0 +1,30 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    max-width: max-content;
+}
+
+.nav-link {
+    color: black;
+}
+
+.dropdown-menu a {
+    display: block;
+}
+
+.mi-dropdown {
+    transform: translateY(37px) !important;
+    margin: 10px !important;
+}
+
+.mi-dropdown > * {
+    margin: 5px;
+}
+
+.copy {
+    color: orangered;
+}

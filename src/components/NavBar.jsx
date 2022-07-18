@@ -36,7 +36,7 @@ function NavBar() {
               <a className="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                 Categorías
               </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">                
+              <div className="dropdown-menu " aria-labelledby="navbarDropdown">                
                 {navLinks.map((categoria, index) => {
                   return (
                   <Link key={index} to={`/categoria/${categoria}`}>

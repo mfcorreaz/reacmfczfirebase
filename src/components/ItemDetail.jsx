@@ -1,11 +1,11 @@
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
-import { primeraLetraAMayusc } from '../utilidades/utilidades';
+import './ItemDetail.css';
 import ItemCount from './ItemCount';
 
 function ItemDetail({item}) {
-    const {id, imgURL, nombre, descripcion, stock, category} = item
+    const {id, imgURL, nombre, descripcion, stock, category, precio} = item
     const [mostrarItemCount, setMostrarItemCount] = useState(true)
     const {agregarItem} = useContext(CartContext)
 
@@ -14,30 +14,40 @@ function ItemDetail({item}) {
       setMostrarItemCount(false)
     }
 
-    let nombreDisplayeable = primeraLetraAMayusc(nombre)
-    let categoryDisplayeable = primeraLetraAMayusc(category)
     
     return (
       <>
-      <div className="item-detail">
-        <div className="item-header">
-          <h4 className="card-title">{nombreDisplayeable} <span className="subtitulo">#{id}</span></h4>
-          {/*La función primeraLetraAMatusc es propia de mi proyecto. Se encuentra en la carpeta utilidades.*/}
-          <Link to={`/categoria/${category}`}>
-            <h4 className="card-title">Producto: {categoryDisplayeable}</h4>
-          </Link>
+        <div className="container ContenedorPadre ">
+            <div className="encabezadoDetail">
+              <p className="card"> <span className="">Cod Producto: {id}</span></p>
+            </div>
+        
+            <div className='contenedorDetail row ml-1 '>
+              <div className=" contenedorImg col-lg-4 col-md-8 col-sm-12">
+                <img src={(imgURL)} className = 'imagenDetail' alt={"imágen " + nombre}/>
+              </div>
+              <div className='contenidoDetail'>
+                  <Link to={`/categoria/${category}`}>
+                    <h5>Producto: {nombre}</h5>
+                  </Link> 
+                  <h5 className="card-title">Categoría: {category}</h5>
+                 
+                  <div className="">
+                      <h5>Descripción:</h5>
+                      <p  className="card-text mb-3">{descripcion} </p>
+                      <h5 className='mb-3'>Stock: {stock} </h5>
+                      <h5>Precio: $ {precio} </h5>
+                  </div>
+                  <div >
+                      {mostrarItemCount ? 
+                        <ItemCount key={id} inicial={stock > 0 ? 1 : 0} item={item} setMostrarItemCount={setMostrarItemCount} onAdd={onAdd}/>
+                        : 
+                        <Link to="/miCarrito" className='btn btn-primary mt-2 '>Ir al carrito</Link>
+                      }   
+                  </div>
+              </div>
+            </div>
         </div>
-        <img src={(imgURL)} className="item-detail-img-top" alt={"imágen " + nombre}/>
-        <div className="item-detail-body">
-          <h5 className="card-title">{nombreDisplayeable}</h5>
-          <p className="card-text">{descripcion} </p>
-        </div>
-        {mostrarItemCount ? 
-           <ItemCount key={id} inicial={stock > 0 ? 1 : 0} item={item} setMostrarItemCount={setMostrarItemCount} onAdd={onAdd}/>
-           : 
-           <Link to="/miCarrito" className='btn btn-primary '>Ir al carrito</Link>
-        }        
-      </div>
       </>
     )
 }

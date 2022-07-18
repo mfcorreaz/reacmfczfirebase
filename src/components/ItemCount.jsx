@@ -57,7 +57,8 @@ function ItemCount({inicial, item, onAdd}) {
 
     return (
       <>
-        <form>
+        <div className="row">
+        <form className='formCount'>
             <div id={nombre} className="contenedor-parte-principal">
                 <div className="contenedor-control-inventario">
                     <span className='cantidad-disponible'>Disponibles: {stock}</span>
@@ -71,12 +72,13 @@ function ItemCount({inicial, item, onAdd}) {
                     onClick={()=> { clickBotonSumar() }}/>
                 </div>
                 <span className="precio">Precio unidad: <span>${precio}</span></span>
+                <div className="contenedor-boton-agregar">
+                   <button className="agregar-al-carrito" onClick={(event)=>{ clickBotonSumarAlCarrito(event) }}>Agregar al carrito</button>
+                 </div>
             </div>
-            <div className="contenedor-boton-agregar">
-                <button className="agregar-al-carrito"
-                onClick={(event)=>{ clickBotonSumarAlCarrito(event) }}>Agregar al carrito</button>
-            </div>
+           
         </form>
+        </div>
       </>
     )
 }

@@ -4,8 +4,8 @@ import './ItemList.css'
 
 function ItemList({arrayProductos}) {
   return (
-    <div className='lista-nfts'>
-        {arrayProductos?.map(nft => <Item key={nft.id} nft={nft}/>)}
+    <div className='ListaStroke'>
+        {arrayProductos?.map(stroke => <Item key={stroke.id} stroke={stroke}/>)}
     </div>
   )
 }

@@ -4,8 +4,8 @@ import {doc, getDoc, getFirestore} from 'firebase/firestore';
 import { useState } from 'react';
 import Loading from './Loading';
 
-function Item({nft}) {
-  const {id} = nft
+function Item({stroke}) {
+  const {id} = stroke
 
   const [item, setItem] = useState({})
   const [loading, setLoading] = useState(false)
@@ -27,7 +27,7 @@ function Item({nft}) {
     return (
       <>
       <Link to={`/producto/${id}`}>
-        <div className="card">
+        <div className="card ">
           <img src={(item.imgURL)} className="card-img-top" alt={(item.nombre)}/>
           <div className="card-body">
             <h5 className="card-title">{(item.nombre)}</h5>
@@ -35,7 +35,6 @@ function Item({nft}) {
             <p className='card-text'>En stock: {item.stock}/{item.existentes}</p>
             <p className='card-text'>Precio $: {item.precio}</p>
             <p className="btn btn-primary">Detalles</p>
-            
           </div>
         </div>
       </Link>

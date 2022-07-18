@@ -6,6 +6,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import MiCarrito from './components/MiCarrito';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import MyProvider from './context/CartContext';
 
 // Import the functions you need from the SDKs you need
@@ -37,12 +38,12 @@ export default function App() {
       <Routes>
         <Route path='/' element={<ItemListContainer />} />
         <Route path='/home' element={<ItemListContainer />} />
-        {/* Paso el estado cantidadProductosEnCarrito para que se pueda utilizar el dato dentro del componente y también paso la función con la que se puede modificar para que pueda ser modificable dentro del mismo*/}
         <Route path='/producto/:idProducto' element={<ItemDetailContainer/>} />
         <Route path='/categoria/:categoryName' element={<Category />} />
         <Route path='/miCarrito' element={<MiCarrito />} />
         <Route path='/checkout' element={<Checkout />} />
       </Routes>
+      <Footer />
       </BrowserRouter>
     </MyProvider>      
     </>

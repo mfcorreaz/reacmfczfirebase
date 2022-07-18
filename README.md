@@ -1,10 +1,15 @@
 <!-- Bienvenidos a The Stroke. -->
-    
 
-    Proximamente mi README.
+Este proyecto tiene como objetivo demostrar lo aprendido en el curso de React cursado en CoderHouse con el profe Guishe.
+La tienda en cuestion, tene como servicio, vender productos referente a la Banda de New York, llamado The Stroke.
+En una pantalla principal, esta la galeria de productos, en un navbar podemos filtrar los productos segun su categoria (Disco, Posters, Remeras).
+Al seleccionar un  producto, vamos a tener el detalle del mismo, pudiendo seleccionarla cantidad de producto a comprar, en el caso de superar el stock, les va a aparecer una advertencia del mismo.
+En el carrito de comprar, se vera reflejado, los productos seleccionados con el total a pagar.
+Para finalizar la compra deberá rellenar un formulario correctamente, para luego enviar dicha informacion en la BBDD en Firebase.
 
+No pude hacer el deploy por que me tiro un error a la hora de instalar el firebase por consola
 
-
+A continuacion informacion de GIT. 
 <!-- Fin bienvenida -->
 
 # Getting Started with Create React App

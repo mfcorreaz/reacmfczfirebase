@@ -1,0 +1,88 @@
+.contenedor-principal {
+    background-color: #eee;
+    width: 100%;
+   
+    padding: 24px;
+    
+}
+
+.aca {
+    margin-left: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+
+.sombra-contenedor{
+    height: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #eee;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.input-container {
+    border: black solid;
+    border-width: 0 0 1px 0;
+    width: 100%;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.input-valido:focus {
+    background-color: lightgreen;
+}
+
+.input-no-valido:focus {
+    background-color: lightcoral;
+}
+
+.input-feedback {
+    color: red;
+}
+
+.mensaje-error {
+    color: red;
+    font-style: italic;
+}
+
+.id-compra-container {
+    margin-top: 20px;
+    border: black solid;
+    padding-top: 10px;
+    border-width: 1px 0 0 0;
+}
+
+.id-info {
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.id-display {
+    font-weight: normal;
+}

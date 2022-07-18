@@ -4,8 +4,9 @@
     justify-content: center;
 
     margin-right: 25px;
-    color: #fff;
-    background-color: dimgrey;
+    color: white;
+    background-color: orangered;
+    
     border-radius: 12px;
     padding: 0 5px;
 }

@@ -6,7 +6,9 @@ En una pantalla principal, esta la galeria de productos, en un navbar podemos fi
 Al seleccionar un  producto, vamos a tener el detalle del mismo, pudiendo seleccionarla cantidad de producto a comprar, en el caso de superar el stock, les va a aparecer una advertencia del mismo.
 En el carrito de comprar, se vera reflejado, los productos seleccionados con el total a pagar.
 Para finalizar la compra deberá rellenar un formulario correctamente, para luego enviar dicha informacion en la BBDD en Firebase.
+LINK: GIF. https://drive.google.com/file/d/1Xgd5E3t8iX9RwjzjY2jbYNNx71V-FQAW/view?usp=sharing
 
+      GITHUB https://github.com/mfcorreaz/reacmfczfirebase.git
 No pude hacer el deploy por que me tiro un error a la hora de instalar el firebase por consola
 
 A continuacion informacion de GIT. 
